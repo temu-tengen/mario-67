@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>My Java Game</title>
+    <!-- Load the CheerpJ Runtime -->
+    <script src="https://cjrtnc.leaningtech.com/4.2/loader.js"></script>
+</head>
+<body>
+    <script>
+        (async function () {
+            // 1. Initialize the CheerpJ environment
+            await cheerpjInit();
+            
+            // 2. Create the graphical display (Width, Height)
+            cheerpjCreateDisplay(800, 470);
+            
+            // 3. Run your JAR file. 
+            // Note: "/app/" is a virtual prefix CheerpJ uses to find your local files.
+            await cheerpjRunJar("/app/mario67.jar");
+        })();
+    </script>
+</body>
+</html>
